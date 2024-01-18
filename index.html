@@ -74,6 +74,17 @@
             <li>Concatena la salida de un comando a un archivo, si no existe el archivo lo crea: <b>ls (nombre-del-archivo-o-diretorio) >> (nombre-del-archivo).txt</b> </li>
             <li>Redirige la salida de error de un comando a un archivo: <b>ls (nombre-del-archivo-o-diretorio) 2> (nombre-del-archivo).txt</b> </li>
             <li>Redirige la salida de un comando, que se ejecuto satisfactoriamente o un comando que presento errores, a un archivo: <b>ls (nombre-del-archivo-o-diretorio) > (nombre-del-archivo) 2>&1</b> </li>
-        </ul>
+    </ul>
+
+    <ul>
+        <h2>Comandos Basicos de la terminal | Class #7</h2>
+            <li>Genera un stdout con el texto que tenemos: <b>echo (texto)</b> </li>
+            <li>Muestra los dos archivos concatenados: <b>cat (nombre-del-archivo) (nombre-del-archivo)</b> </li>
+            <li>El pipe operator "|" hace que el stdout de un comando sea el stdin de otro comando: <b>ls -lh | less (nombre-del-archivo)</b> </li>
+            <li>"tee" hace algo parecido a "">"", pero dentro de los pipes: <b>ls -lh | tee (nombre-del-archivo) | less</b> </li>
+            <li>Generar texto con bonitos colores: <b>echo "texto" | lolcat</b> </li>
+            <li>Generar una vaquita con un mensaje de texto: <b>cowsay "texto"</b> </li>
+            <li>Generar una vaquita con un mensaje de texto con color, usando el pipe operator: <b>cowsay "texto" | lolcat</b> </li>
+    </ul>
 </body>
 </html>

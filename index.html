@@ -80,6 +80,27 @@
             <li>Ejecutar comandos de forma asincrona: <b>(comando) & (comando) & (comando)</b> </li>
             <li>Ejecutar comandos de forma condicional: <b>(comando) && (comando) && (comando)</b> </li>
             <li>Ejecutar comandos de forma OR: <b>(comando) || (comando) || (comando)</b> </li>
+
+        <h2>Comandos Basicos de la terminal | Class #9</h2>
+            <p>
+                <h3>Cómo se manejan los permisos.</h3>
+                    <p>Cuando listamos con ls -l se muestran varias cosas. Los tipos de archivos:</p>
+                    <li> <b>-</b> archivo normal. </li>
+                    <li> <b>d</b> directorio. </li>
+                    <li> <b>l</b> link simbólico. </li>
+                    <li> <b>b</b> archivo de bloque especial. </li>
+                <h3>Tipos de modos:</h3>
+                    <p> rwx corresponde con read, write y execute. Se representan con 3 bits, y los podemos manejar a través de un modo octal, esto es, pasar de binario a número.</p>
+                    <li> <b>rwx (1,1,1)</b> dueño. En modo octal es 7. </li>
+                    <li> <b>r-x (1,1,1)</b> grupo. En modo octal es 5. </li>
+                    <li> <b>r-x (1,0,1)</b> world. Octal 5. </li>
+                <h3>Modo simbólico:</h3>
+                    <p> Esto es para asignar los permisos a los diferentes posibles usuarios.</p>
+                    <li> <b>u</b> Solo para el usuario. </li>
+                    <li> <b>g</b> Solo para el grupo. </li>
+                    <li> <b>o</b> Solo para otros (world). </li>
+                    <li> <b>a</b> Aplica para todos. </li>
+            </p>
     </ul>
 </body>
 </html>
